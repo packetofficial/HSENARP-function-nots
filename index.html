@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title >
+       Function/Method Notes 
+    </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <script type="text/javascript" src="javascript.js"></script>
+
+  </head>
+   <link rel="shortcut icon" href="mm.svg" >
+<body>
+  <nav id="header" class="fixed w-full bg-gradient-to-r from-blue-400 to-blue-500 z-30 top-0 text-white">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+      <div class="pl-4 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="69" height="48" viewBox="0 0 96 59.262">
+          <g id="Group_1" data-name="Group 1" transform="translate(1 -13.369)">
+            <text id="HSE_N_ARP" data-name="HSE  N  ARP" transform="translate(11 48)" fill="#ff6f00" stroke="#f7375d" stroke-width="0.4" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0" xml:space="preserve">HSE  N  ARP</tspan></text>
+            <line id="Line_1" data-name="Line 1" x1="16" y2="59" transform="translate(39.5 13.5)" fill="none" stroke="#ff6f00" stroke-width="1"/>
+            <g id="Subtraction_1" data-name="Subtraction 1" transform="translate(-2 19)" fill="#ff6f00">
+              <path d="M 38.74970245361328 47.54612731933594 L 1.468071103096008 24.00029563903809 L 38.74970245361328 0.4535841345787048 L 38.74970245361328 2.719729900360107 L 38.26156997680664 3.028029203414917 L 18.44070243835449 15.54672908782959 C 8.940281867980957 21.54613876342773 5.390661716461182 23.78894996643066 5.390661716461182 23.78894996643066 L 5.05610179901123 24.0003490447998 L 5.390701770782471 24.211669921875 L 38.74970245361328 45.28009033203125 L 38.74970245361328 47.54612731933594 Z" stroke="none"/>
+              <path d="M 38.49970245361328 47.09255218505859 L 38.49970245361328 45.41788864135742 L 5.257211685180664 24.42304992675781 L 4.587991714477539 24.00038909912109 L 5.257121562957764 23.57761001586914 C 5.257121562957764 23.57761001586914 8.806751251220703 21.33478927612305 18.30720138549805 15.33535957336426 L 38.12807083129883 2.816659212112427 L 38.49970245361328 2.581940412521362 L 38.49970245361328 0.907168984413147 L 1.936243414878845 24.00028991699219 L 38.49970245361328 47.09255218505859 M 38.99970245361328 47.99969863891602 L 38.99817276000977 47.99874114990234 L 0.9999016523361206 24.00029945373535 L 38.99970245361328 -6.805419729971618e-07 L 38.99970245361328 2.857519388198853 L 38.39507293701172 3.239399433135986 L 18.5742015838623 15.75809955596924 C 9.07380199432373 21.75749969482422 5.5242018699646 24.00029945373535 5.5242018699646 24.00029945373535 L 38.99970245361328 45.14229965209961 L 38.99970245361328 47.99789047241211 L 38.99970245361328 47.99969863891602 Z" stroke="none" fill="#f7375d"/>
+            </g>
+            <g id="Subtraction_3" data-name="Subtraction 3" transform="translate(95 67) rotate(180)" fill="#ff6f00">
+              <path d="M 37.74980163574219 47.54612731933594 L 0.4681702852249146 24.00029373168945 L 37.74980163574219 0.453582227230072 L 37.74980163574219 2.719727993011475 L 37.26166915893555 3.028027296066284 L 17.4408016204834 15.54672718048096 C 7.940381050109863 21.5461368560791 4.390760898590088 23.78894805908203 4.390760898590088 23.78894805908203 L 4.056200981140137 24.00034713745117 L 4.390800952911377 24.21166801452637 L 37.74980163574219 45.28009033203125 L 37.74980163574219 47.54612731933594 Z" stroke="none"/>
+              <path d="M 37.49980163574219 47.09255218505859 L 37.49980163574219 45.41788482666016 L 4.25731086730957 24.42304801940918 L 3.588090896606445 24.00038719177246 L 4.25722074508667 23.57760810852051 C 4.25722074508667 23.57760810852051 7.806850910186768 21.33478736877441 17.30730056762695 15.33535766601563 L 37.12817001342773 2.816657304763794 L 37.49980163574219 2.581938505172729 L 37.49980163574219 0.9071670770645142 L 0.9363425970077515 24.00028800964355 L 37.49980163574219 47.09255218505859 M 37.99980163574219 47.99969863891602 L 37.99827194213867 47.99873733520508 L 8.178710686479462e-07 24.00029754638672 L 37.99980163574219 -2.587890548966243e-06 L 37.99980163574219 2.85751748085022 L 37.39517211914063 3.239397525787354 L 17.57430076599121 15.75809764862061 C 8.073901176452637 21.75749778747559 4.524301052093506 24.00029754638672 4.524301052093506 24.00029754638672 L 37.99980163574219 45.14229583740234 L 37.99980163574219 47.99788665771484 L 37.99980163574219 47.99969863891602 Z" stroke="none" fill="#f7375d"/>
+            </g>
+          </g>
+        </svg>
+        
+        <a class="toggleColour text-white no-underline hover:no-underline font-bold px-2 text-4xl text-red-500 lg:text-4xl" href="#">
+      HSENARP
+        </a>
+      </div>
+      <div class="block lg:hidden pr-4">
+        <button id="nav-toggle" class="flex items-center p-1 text-pink-600 text-3xl hover:text-pink-500 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <svg class="fill-current h-7 w-7" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <div class=" w-full flex-grow lg:flex lg:items-center  lg:w-auto hidden mt-2 lg:mt-0 bg-blue-400 lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center  ">
+          <li class="mr-2">
+            <a class="inline-block py-2 px-4 text-black text-2xl hover:text-red-600 no-underline " href="https://musing-goldwasser-1e7741.netlify.app/ ">JAVA Programs</a>
+          </li>  
+             </li>
+          <li class="mr-2">
+            <a class="inline-block  text-black text-2xl no-underline hover:text-red-600 hover:text-underline py-2 px-4" href="https://distracted-wilson-5e10df.netlify.app/#">JAVA Notes</a>
+          </li>
+          <li class="mr-2">
+            <a class="inline-block  text-black text-2xl no-underline hover:text-red-600 hover:text-underline py-2 px-4" href="https://happy-austin-660c89.netlify.app/#">About</a>
+          </li>
+          <li class="mr-2">
+            <a class="inline-block py-2 px-4 text-black text-2xl hover:text-red-600 no-underline " href="https://blissful-swanson-71dbfb.netlify.app/">Pattern</a>
+          </li>  
+          <li class="mr-2">
+            <a class="inline-block py-2 px-4 text-black text-2xl hover:text-red-600 no-underline" href="https://forms.gle/Ms1gNfh7zz6CMx3L6">Feedback</a>
+          </li>  
+        </ul>
+      
+      </div>
+    </div>
+    <hr class="border-b border-blue-700 opacity-100 " />
+  </nav> 
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full ">
+      <h2 class="text-3xl text-center text-indigo-500 tracking-widest font-medium title-font mb-1">FUNCTIONS / METHODS NOTES
+       </h2>
+      <div class="flex mt-4 justify-center">
+        <div class="w-80 h-1 rounded-full bg-red-500 inline-flex"></div>
+        
+      </div>
+    <div class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 sm:pl-0 md:pl-0 xs:pl-0 pt-6 mt-8 text-2xl">DEFINITION OF FUNCTION - </div><br>
+     
+    <h1 class="text-grey-700 text-2xl lg:pl-48 lg:pr-48  xl:pl-48 xl:pr-48  sm:pl-0 sm:pr-o  md:pl-24 md:pr-24 xs:pl-0 xs:pr-0 mt-1 text-center font-semibold"> A function is a named block of instructions. Statements in a function can be executed several times using the name of the function.</h1>
+     
+     <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-6 mt-8 text-2xl">ADVANTAGES OF DIVIDING A PROGRAM INTO  DIFFERENT  FUNCTION </h1><br>
+     <h1 class="text-grey-700 text-2xl lg:pl-48 lg:pr-48  xl:pl-48 xl:pr-48  sm:pl-0 sm:pr-o  md:pl-24 md:pr-24 xs:pl-0 xs:pr-0 mt-1 text-center font-semibold">Dividing a program into different functions help us to </h1>
+     <h1 class="text-grey-700 text-2xl lg:pl-48 lg:pr-48  xl:pl-48 xl:pr-48  sm:pl-0 sm:pr-o  md:pl-24 md:pr-24 xs:pl-0 xs:pr-0 mt-1 text-center font-semibold">1.Reduce the number of lines in a program.</h1>
+     <h1 class="text-grey-700 text-2xl lg:pl-48 lg:pr-48  xl:pl-48 xl:pr-48  sm:pl-0 sm:pr-o  md:pl-24 md:pr-24 xs:pl-0 xs:pr-0 mt-1 text-center font-semibold">2.Reduce the complexity of solving a problem</h1>
+
+     <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-6 mt-8 text-2xl">FORMAT OF DEFINING A FUNCTION</h1><br>
+   
+    </div>
+    <img src="yyy.svg" alt="" class="lg:pl-48 lg:pr-48  xl:pl-48 xl:pr-48  sm:pl-0 sm:pr-o  md:pl-24 md:pr-24 xs:pl-0 xs:pr-0 mt-1 ">
+
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2 mt-6 text-2xl">* In the syntax the square brackets indicate optional component</h1><br>
+   
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2 mt-6 text-2xl">return type:   The return type is the data type of the value themethod returns.If a method does not return any value then the return type is the keyword void .</h1><br>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2 mt-6 text-2xl">Method Name: This is the  name of the method given by the programmer. Any valid identifier can be used as the method name .</h1><br>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2 mt-6 text-2xl">Parameter list: The parameter list refers to the data type, order, and number of the parameters of a method. Parameters are optional; that is, a method may  not contain any parameter. Parameters areused in a method to receive values for processing.</h1><br>   
+    <div class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 sm:pl-0 md:pl-0 xs:pl-0 pt-6  text-3xl"> Format - </div>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">(data type var1, data type var2,......,data type varn)</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">(int a,b,c)-> Wrong format of declaring variables in the parameter list</h1>
+    <div class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 sm:pl-0 md:pl-0 xs:pl-0 pt-6  text-2xl"> Method Body: The method body contains a collection of statements that define what the method does. 
+    </div>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-3xl">return :</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">-Keyword return is used to transfer a value from  one function to another function.</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">-It is also used to terminate a function</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">Note: A function can return only one value even though   several return statements can be written inside a function.</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-6 mt-6 text-2xl">Function header/function prototype:</h1><br>
+    <h1 class="text-grey-700 text-left lg:pl-48 mb-6 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">The  first line of defining a function that contains the return type function name and parameter list is called function prototype</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">QUESTION 1.Write the prototype of a function named testthat takes two integers and a character as  parameters and  returns a logical constant.</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">ANSWER-  boolean test(int a, int b, char ch)</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2 mt-6 text-2xl">QUESTION 2.Write the prototype of a function namedinterestthat takes principle, rate and time (double values) as parameters and returns simple interest.</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">ANSWER- double interest(double p, double r, double t)</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2 mt-6 text-2xl">QUESTION 3.Write the prototype of a function named processthat take  variables of four different integer numeric data types as parameters and returns the sum of the parameters.</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">ANSWER- long process (byte b, short s, int i, long l)</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2 mt-6 text-2xl">QUESTION 4.Write the prototype of a function named area that takes the length and the breadth (double values) of a rectangle as parameters and displays the area.</h1>
+    <h1 class="text-grey-700 text-left lg:pl-48 lg:pl-48 font-semibold  xl:pl-48 md:pr-48 sm:pl-0 md:pl-0 xs:pl-0 pt-2  text-2xl">ANSWER- void area(double l, double b)</h1>
+    
+  </div>
+<section/>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script async="async" data-cfasync="false" src="//pl16241530.performancetrustednetwork.com/fc35560271decdd3b4574c81b679efdf/invoke.js"></script>
+<div id="container-fc35560271decdd3b4574c81b679efdf"></div>
+<script async="async" data-cfasync="false" src="//pl16241530.performancetrustednetwork.com/fc35560271decdd3b4574c81b679efdf/invoke.js"></script>
+<div id="container-fc35560271decdd3b4574c81b679efdf"></div>
+</body>
+ 
+  
+   <body  class='flex flex-col h-full'>
+    <div id='content' class='flex-1 mx-auto p-18'> 
+  </div> 
+      <footer class="text-gray-600 bg-blue-400 body-font">
+          <div class="container px-5 py-8 mx-auto flex  items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-600">
+           
+              <svg xmlns="http://www.w3.org/2000/svg" width="124" height="84.262" viewBox="0 0 96 59.262 ">
+                <g id="Group_1" data-name="Group 1" transform="translate(1 -13.369)">
+                  <text id="HSE_N_ARP" data-name="HSE  N  ARP" transform="translate(11 48)" fill="#ff6f00" stroke="#f7375d" stroke-width="0.4" font-size="13" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0" xml:space="preserve">HSE  N  ARP</tspan></text>
+                  <line id="Line_1" data-name="Line 1" x1="16" y2="59" transform="translate(39.5 13.5)" fill="none" stroke="#ff6f00" stroke-width="1"/>
+                  <g id="Subtraction_1" data-name="Subtraction 1" transform="translate(-2 19)" fill="#ff6f00">
+                    <path d="M 38.74970245361328 47.54612731933594 L 1.468071103096008 24.00029563903809 L 38.74970245361328 0.4535841345787048 L 38.74970245361328 2.719729900360107 L 38.26156997680664 3.028029203414917 L 18.44070243835449 15.54672908782959 C 8.940281867980957 21.54613876342773 5.390661716461182 23.78894996643066 5.390661716461182 23.78894996643066 L 5.05610179901123 24.0003490447998 L 5.390701770782471 24.211669921875 L 38.74970245361328 45.28009033203125 L 38.74970245361328 47.54612731933594 Z" stroke="none"/>
+                    <path d="M 38.49970245361328 47.09255218505859 L 38.49970245361328 45.41788864135742 L 5.257211685180664 24.42304992675781 L 4.587991714477539 24.00038909912109 L 5.257121562957764 23.57761001586914 C 5.257121562957764 23.57761001586914 8.806751251220703 21.33478927612305 18.30720138549805 15.33535957336426 L 38.12807083129883 2.816659212112427 L 38.49970245361328 2.581940412521362 L 38.49970245361328 0.907168984413147 L 1.936243414878845 24.00028991699219 L 38.49970245361328 47.09255218505859 M 38.99970245361328 47.99969863891602 L 38.99817276000977 47.99874114990234 L 0.9999016523361206 24.00029945373535 L 38.99970245361328 -6.805419729971618e-07 L 38.99970245361328 2.857519388198853 L 38.39507293701172 3.239399433135986 L 18.5742015838623 15.75809955596924 C 9.07380199432373 21.75749969482422 5.5242018699646 24.00029945373535 5.5242018699646 24.00029945373535 L 38.99970245361328 45.14229965209961 L 38.99970245361328 47.99789047241211 L 38.99970245361328 47.99969863891602 Z" stroke="none" fill="#f7375d"/>
+                  </g>
+                  <g id="Subtraction_3" data-name="Subtraction 3" transform="translate(95 67) rotate(180)" fill="#ff6f00">
+                    <path d="M 37.74980163574219 47.54612731933594 L 0.4681702852249146 24.00029373168945 L 37.74980163574219 0.453582227230072 L 37.74980163574219 2.719727993011475 L 37.26166915893555 3.028027296066284 L 17.4408016204834 15.54672718048096 C 7.940381050109863 21.5461368560791 4.390760898590088 23.78894805908203 4.390760898590088 23.78894805908203 L 4.056200981140137 24.00034713745117 L 4.390800952911377 24.21166801452637 L 37.74980163574219 45.28009033203125 L 37.74980163574219 47.54612731933594 Z" stroke="none"/>
+                    <path d="M 37.49980163574219 47.09255218505859 L 37.49980163574219 45.41788482666016 L 4.25731086730957 24.42304801940918 L 3.588090896606445 24.00038719177246 L 4.25722074508667 23.57760810852051 C 4.25722074508667 23.57760810852051 7.806850910186768 21.33478736877441 17.30730056762695 15.33535766601563 L 37.12817001342773 2.816657304763794 L 37.49980163574219 2.581938505172729 L 37.49980163574219 0.9071670770645142 L 0.9363425970077515 24.00028800964355 L 37.49980163574219 47.09255218505859 M 37.99980163574219 47.99969863891602 L 37.99827194213867 47.99873733520508 L 8.178710686479462e-07 24.00029754638672 L 37.99980163574219 -2.587890548966243e-06 L 37.99980163574219 2.85751748085022 L 37.39517211914063 3.239397525787354 L 17.57430076599121 15.75809764862061 C 8.073901176452637 21.75749778747559 4.524301052093506 24.00029754638672 4.524301052093506 24.00029754638672 L 37.99980163574219 45.14229583740234 L 37.99980163574219 47.99788665771484 L 37.99980163574219 47.99969863891602 Z" stroke="none" fill="#f7375d"/>
+                  </g>
+                </g>
+              </svg>
+
+             
+     <span class=" text-red-600 text-3xl  sm:text-lg pr-2 pl-1 md:text-2xl font-bold lg:text-2xl xl:text-2xl">HSENARP</span>
+    </a>
+            <p class=" text-gray-900 text-lg  sm:pl-2 sm:border-l-2 sm:border-black sm:py-2 sm:mt-0 mt-4">© 2021 — HSENARP
+            </p>      
+              <a href="https://www.instagram.com/pranesh._.pranat/?igshid=rqnlrzv398rh" class="text-black text-xl lg:text-2xl xl:text-2xl md:ml-2 lg:ml-2 sm:text-lg" rel="noopener noreferrer" target="_blank">@pranesh._.pranat</a>
+              
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            
+              <a class="text-black">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a> 
+              
+              <a class="ml-3 text-black">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-black" href="https://www.instagram.com/pranesh._.pranat/?igshid=rqnlrzv398rh">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-black">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </footer>
+        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script> 
+    var scrollpos = window.scrollY;
+    var header = document.getElementById("header");
+    var navcontent = document.getElementById("nav-content");
+    var navaction = document.getElementById("navAction");
+    var brandname = document.getElementById("brandname");
+    var toToggle = document.querySelectorAll(".toggleColour");
+
+    document.addEventListener("scroll", function () {
+      /*Apply classes for slide in bar*/
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+        header.classList.add("bg-blue-400");
+        navaction.classList.remove("bg-blue-400");
+        navaction.classList.add("gradient");
+        navaction.classList.remove("text-gray-800");
+        navaction.classList.add("text-white");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-gray-800");
+          toToggle[i].classList.remove("text-white");
+        }
+        header.classList.add("shadow");
+        navcontent.classList.remove("bg-gray-100");
+        navcontent.classList.add("bg-blue-400");
+      } else {
+        header.classList.remove("bg-white");
+        navaction.classList.remove("gradient");
+        navaction.classList.add("bg-white");
+        navaction.classList.remove("text-white");
+        navaction.classList.add("text-gray-800");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-white");
+          toToggle[i].classList.remove("text-gray-800");
+        }
+
+        header.classList.remove("shadow");
+        navcontent.classList.remove("bg-white");
+        navcontent.classList.add("bg-gray-100");
+      }
+    });
+  </script>
+  <script>
+    /*Toggle dropdown list*/
+    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+    var navMenuDiv = document.getElementById("nav-content");
+    var navMenu = document.getElementById("nav-toggle");
+
+    document.onclick = check;
+    function check(e) {
+      var target = (e && e.target) || (event && event.srcElement);
+
+      //Nav Menu
+      if (!checkParent(target, navMenuDiv)) {
+        // click NOT on the menu
+        if (checkParent(target, navMenu)) {
+          // click on the link
+          if (navMenuDiv.classList.contains("hidden")) {
+            navMenuDiv.classList.remove("hidden");
+          } else {
+            navMenuDiv.classList.add("hidden");
+          }
+        } else {
+          // click both outside link and outside menu, hide menu
+          navMenuDiv.classList.add("hidden");
+        }
+      }
+    }
+    function checkParent(t, elm) {
+      while (t.parentNode) {
+        if (t == elm) {
+          return true;
+        }
+        t = t.parentNode;
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
+
+                
